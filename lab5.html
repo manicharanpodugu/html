@@ -1,0 +1,56 @@
+<!-- Implement the following. a. ID Selector
+b. Class Selector.
+c. Group Selector
+d. Universal Selector
+e. Element Selector  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <style>
+      /* Universal Selector */
+      * {
+        color: rgb(255, 0, 4);
+        text-align: center;
+        border-color: rgb(255, 163, 127);
+      }
+      /* Element Selector */
+      p {
+        color: rgb(239, 134, 22);
+        text-align: center;
+        border-color: aquamarine;
+      }
+      /* Id Selector */
+      #para {
+        color: rgb(141, 222, 100);
+        text-align: center;
+        border-color: aquamarine;
+      }
+      /* Class Selector */
+      .abc {
+        color: rgb(89, 171, 107);
+        text-align: center;
+        border-color: aquamarine;
+      }
+      /* Grouping Selector */
+      p,
+      h1,
+      h3 {
+        color: rgb(174, 27, 51);
+        text-align: left;
+        border-color: rgb(179, 110, 50);
+      }
+    </style>
+  </head>
+  <body>
+    <p>This is a paragraph.</p>
+    <h1 class="para">This is heading one.</h1>
+    <p class="abc">This is a paragraph.</p>
+    <h1>This is first heading.</h1>
+    <p>This is a paragraph.</p>
+    <h3>This is third heading.</h3>
+  </body>
+</html>

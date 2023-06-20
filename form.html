@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <title>forms</title>
+  </head>
+  <body
+    style="
+      background: linear-gradient(
+        to  right ,
+        rgba(255, 81, 0, 0.687),
+        rgba(0, 255, 72, 0.513)
+      );
+    "
+  >
+    <form action="a.php" method="post">
+      <label for="name">NAME:</label> 
+      <input type="text" id="name" placeholder="enter your name" required />
+      <br />
+      <br />
+      <label for="email">email ID:</label> 
+      <input type="text" id="email" placeholder="enter your email id" required/>
+      <select>
+        <option>@--select--</option>
+        <option>@gmail.com</option>
+        <option>@yahoo.com</option>
+        <option>@nitsri.in</option>
+
+      </select>
+      <br />
+      <br/>
+     <label for="numb">ph.no:</label> <select><option>+91</option><option>+19</option><option>+1</option><option>+12</option></select><input type="tel" id="numb" placeholder="9876543210" required>
+      <br />
+      <br/>
+      <label>Password:</label><input type="password" placeholder="Password" required>
+      <br/>
+      <br />
+      <input
+        type="submit"
+        value="submit"
+        style="color: rgba(255, 81, 0, 0.687); background-color: rgba(0, 255, 72, 0.513);"
+      />
+      <br />
+      <br />
+      GENDER:
+      <label for="male">male </label>
+      <input type="radio" name="gender" id="male" value="male" />
+      <label for="female"> female </label>
+      <input type="radio" id="female" name="gender" value="female" />
+
+      <label for="other">other </label>
+      <input type="radio" id="other" name="gender" value="other" />
+      <br/>
+      <br/>
+      Time:<input type="time">
+      <br />
+      <br />
+      fav color:<input type="color">
+      <br />
+      <br />      
+      languages familiar with:<input type="checkbox" />C++<input
+        type="checkbox"
+      />python <input type="checkbox" />html
+      <br />
+      <br />
+      DOB:<input type="date" />
+      <br />
+      <br />
+      Bio:<textarea
+        placeholder="enter your bio"
+        cols="82"
+        rows="5"
+        style="
+        background: linear-gradient(
+          to left,
+          
+          rgba(255, 81, 0, 0.687),
+          rgba(0, 255, 72, 0.513)
+          
+        );
+      "
+      ></textarea>
+      <br />
+      <br />
+      branch:<select >
+        <option>--select--</option>
+        <option>IT</option>
+        <option>CSE</option>
+        <option>ECE</option>
+        <option>EE</option>
+        <option>MECH</option>
+        <option>MME</option>
+        <option>CHE</option>
+      </select>
+      <br/>
+      <br/>
+     <label>date_time:</label> <input type="datetime-local">
+      <br/>
+      <br/>
+      range:<input type="range">
+      <br/>
+      <br/>
+      <input type="reset">
+    </form>
+  </body>
+</html>

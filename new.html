@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <head name="h" >form validation</head>
+    <h2 id="h2"></h2>
+    <h1 id="head">vj</h1>
+    <p class="p">para</p>
+      <p classname="para">name:</p> 
+    <script>
+        var h=document.getElementById("head");
+        console.log(h);
+        var p=document.getElementsByClassName("para");
+        console.log(p);
+        var a=document.getElementsByName("h");
+        console.log(a);
+        var child=document.createElement("p");
+        var i=document.getElementById("h2");
+        var text=document.createTextNode(" this is text node");
+        i.appendChild(text);
+        var comment=document.createComment("This is commennt line")
+        console.log(comment);
+    </script>
+    
+</body>
+</html>

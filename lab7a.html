@@ -1,0 +1,26 @@
+<!-- Implement the following.
+ a.Variable (Local and globals)
+  b.Events (onload,onclick) 
+  c.Assignment Operators 
+  d.Comparison Operators 
+  e.Expressions -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Local Variable Example</title>
+    <script>
+      function calculateSum() {
+        var num1 = 60;
+        var num2 = 9;
+        var sum = num1 + num2;
+        document.getElementById("result").textContent = "The sum is: " + sum;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Local Variable Example</h1>
+    <button onclick="calculateSum()">Calculate Sum</button>
+    <p id="result"></p>
+  </body>
+</html>

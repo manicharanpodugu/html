@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Global Variable Example</title>
+    <script>
+      var greeting = "Hello";
+      function greet() {
+        var output = document.getElementById("output");
+        output.textContent = greeting + " World";
+      }
+      function changeGreeting() {
+        greeting = "Hi";
+        greet();
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Global Variable Example</h1>
+    <button onclick="greet()">Greet</button>
+    <button onclick="changeGreeting()">Change Greeting</button>
+    <p id="output"></p>
+  </body>
+</html>

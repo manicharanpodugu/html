@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Comparison Operators Example</title>
+    <script>
+      function performComparisons() {
+        var x = 5;
+        var y = 10;
+        document.getElementById("values").textContent =
+          x + " and " + y + " are variables";
+        document.getElementById("equalResult").textContent =
+          "x == y: " + (x == y);
+        document.getElementById("notEqualResult").textContent =
+          "x != y: " + (x != y);
+        document.getElementById("greaterThanResult").textContent =
+          "x > y: " + (x > y);
+        document.getElementById("lessThanResult").textContent =
+          "x < y: " + (x < y);
+        document.getElementById("greaterThanOrEqualResult").textContent =
+          "x >= y: " + (x >= y);
+        document.getElementById("lessThanOrEqualResult").textContent =
+          "x <= y: " + (x <= y);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Comparison Operators Example</h1>
+    <button onclick="performComparisons()">Perform Comparisons</button>
+    <h3>Results:</h3>
+    <p id="values"></p>
+    <p id="equalResult"></p>
+    <p id="notEqualResult"></p>
+    <p id="greaterThanResult"></p>
+    <p id="lessThanResult"></p>
+    <p id="greaterThanOrEqualResult"></p>
+    <p id="lessThanOrEqualResult"></p>
+  </body>
+</html>

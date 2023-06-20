@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Expressions Example</title>
+    <script>
+      function performExpressions() {
+        var x = 6;
+        var y = 12;
+        var sum = x + y;
+        var fullName = "mani" + " " + "charan";
+        var isGreater = x > y;
+        var isValid = x > 0 && y < 20;
+        var squareRoot = Math.sqrt(36);
+        document.getElementById("sumResult").textContent = "Sum: " + sum;
+        document.getElementById("fullNameResult").textContent =
+          "Full Name: " + fullName;
+        document.getElementById("isGreaterResult").textContent =
+          "Is Greater: " + isGreater;
+        document.getElementById("isValidResult").textContent =
+          "Is Valid: " + isValid;
+        document.getElementById("squareRootResult").textContent =
+          "Square Root: " + squareRoot;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Expressions Example</h1>
+    <button onclick="performExpressions()">Perform Expressions</button>
+    <h3>Results:</h3>
+    <p id="sumResult"></p>
+    <p id="fullNameResult"></p>
+    <p id="isGreaterResult"></p>
+    <p id="isValidResult"></p>
+    <p id="squareRootResult"></p>
+  </body>
+</html>

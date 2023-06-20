@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body onload="alert('page loaded')" onclick="showCoords(event)" style="border:1px solid black;padding:4px">
+    <form name="myform" action="a.php" onsubmit="return validate()" method="post">
+        
+<h1>HTML DOM Events</h1>
+<p>The onclick event triggers a function when an element is clicked on.</p>
+<p id="para" onmouseover="over()" onmouseleave="dow()">Click to trigger a color change</p>
+
+<button onclick="clic()">Click me</button>
+<p id="dem"></p>
+<p id="demo"></p>
+<input type="text" id="text" onkeydown="keydow()" onkeyup="keyu()" onchange="chan()">
+<input type="submit">
+</form>
+<script>
+    function chan(){
+       alert("changed");
+    }
+    function validate(){
+        let   x = document.myform.text.value;
+        if (x == "") 
+          alert("name must be filled");
+          return false;
+    }
+function clic() {
+  document.getElementById("dem").innerHTML = "Hello World";
+}
+function over(){
+    document.getElementById("para").style.color="red";
+}
+function dow()
+{
+    document.getElementById("para").style.color="black"; 
+}
+function keydow()
+{
+    document.getElementById("text").style.backgroundColor="aqua"; 
+    
+}
+function keyu()
+{
+    document.getElementById("text").style.backgroundColor="red"; 
+    
+}
+function showCoords(event) {
+    let x = event.pageX;
+    let y = event.pageY;
+    let text = "X coords: " + x + ", Y coords: " + y;
+    document.getElementById("demo").innerHTML = text;
+  }
+    
+</script>
+
+</body>
+</html>

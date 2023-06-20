@@ -1,0 +1,2 @@
+write a program to create a webpage describing your details
+<img src ="image.jpg"> is the sintax for adding image in html

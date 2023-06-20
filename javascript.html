@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Basics</title>
+  <script>
+    // JavaScript code goes here
+    function greet() {
+      var name = document.getElementById("name").value;
+      var greeting = "Hello, " + name + "!";
+      document.getElementById("output").textContent = greeting;
+    }
+  </script>
+</head>
+<body>
+  <h1>JavaScript Basics</h1>
+  
+  <label for="name">Enter your name:</label>
+  <input type="text" id="name">
+  <button onclick="greet()">Greet</button>
+  
+  <div id="output"></div>
+</body>
+</html>

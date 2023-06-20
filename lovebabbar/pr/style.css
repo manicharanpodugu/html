@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wraper{
+height: 100vh;
+overflow-y:scroll;
+overflow-x: hidden;
+perspective: 10px;
+
+}
+.container{
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    z-index: -1; 
+} 
+.bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow-y: visible;
+    z-index: -1;
+    transform: translateZ(-40px) scale(auto);
+   
+}
+.fg{
+    align-self: end;
+    position: absolute;
+    width: 30%;
+    object-fit: cover;
+    z-index: -1;
+    transform: translateZ(-30px) scale(auto);
+}
+ h1{
+    position: absolute;
+    font-size: 10rem;
+    color: rgba(78, 78, 78, 0.543);
+
+ }
